@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="w-auto h-auto gap-5 bg-slate-800 flex justify-center items-center flex-col flex-wrap lg:flex-row lg:gap-32 lg:h-[50px]">
+        <a href="./index.html"  class="mt-5 text-center leading-[40px] block w-[400px] h-[40px]  font-cursive capitalize duration-300 hover:scale-125 hover:bg-zinc-400/70 text-violet-100 hover:text-cyan-950 hover:rounded-md lg:mt-0 lg:w-fit lg:hover:bg-transparent lg:hover:text-violet-100">home</a>
+        <a href="#" class="text-center leading-[40px]  w-[400px] h-[40px]  font-cursive capitalize duration-300 hover:scale-125 hover:bg-zinc-300/30 text-violet-100 hover:text-cyan-950 hover:rounded-md lg:w-fit lg:hover:bg-transparent lg:hover:text-violet-100">gallery</a>
+            <a href="#" class="text-center leading-[40px]  w-[400px] h-[40px]  font-cursive capitalize duration-300 hover:scale-125 hover:bg-zinc-300/30 text-violet-100 hover:text-cyan-950 hover:rounded-md lg:w-fit lg:hover:bg-transparent lg:hover:text-violet-100">contact</a>    
+        <a href="./music.html" class="text-center mb-5 leading-[40px]  w-[400px] h-[40px]  font-cursive capitalize duration-300 hover:scale-125 hover:bg-zinc-300/30 text-violet-100 hover:text-cyan-950 hover:rounded-md lg:mb-0 lg:w-fit lg:hover:bg-transparent lg:hover:text-violet-100">music</a>       
+            
+    </div>
+    <div class="flex flex-col flex-wrap bg-slate-800 w-auto  justify-center items-center gap-4 lg:flex-row">
+        <div class="w-[90%] flex h-auto flex-col flex-wrap justify-center items-center gap-2 lg:w-[45%]">
+          <h1 class="font-cursive font-bold text-3xl capitalize text-slate-50">the avengers</h1>
+          <img class="w-[90%] block rounded-md" src="./images/KD.jpg" alt="">
+          <p class="font-cursive text-lg w-[90%] text-slate-50">The men’s basketball action tips off on July 27 — one day after the Opening Ceremony in Paris — with 12 countries competing in the initial Group Phase.</p>
+        </div>
+        <div class="w-[90%] flex h-auto flex-col flex-wrap justify-center items-center gap-2 lg:w-[45%]">
+          <h1 class="font-cursive font-bold text-3xl capitalize text-slate-50">the avengers</h1>
+          <img class="w-[90%] block rounded-md" src="./images/king.jpg" alt="">
+          <p class="font-cursive text-lg w-[90%] text-slate-50">The men’s basketball action tips off on July 27 — one day after the Opening Ceremony in Paris — with 12 countries competing in the initial Group Phase.</p>
+        </div>
+        
+    </div>
+ <!-- Swiper -->
+  <div class="swiper mySwiper bg-slate-800 w-auto h-[100%]">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide text-center font-[18px] bg-slate-800 flex justify-center items-center">
+        <img src="./images/main.jpg"  alt="" class="block text-center rounded-md w-[90%] h-[60%] ml-[4.5%]">
+      </div>
+      <div class="swiper-slide text-center font-[18px] bg-slate-800 flex justify-center items-center">
+        <img src="./images/usa1.jpg" class="block rounded-md w-[90%] h-[60%] ml-[4.5%]" alt="">
+      </div>
+      <div class="swiper-slide text-center font-[18px] bg-slate-800 flex justify-center items-center">
+        <img src="./images/usa2.jpg" class="block rounded-md ml-[4.5%] w-[90%] h-[60%]"  alt="">
+      </div>
+      <div class="swiper-slide text-center font-[18px] bg-slate-800 flex justify-center items-center">
+        <img src="./images/usa2.jpg" class="block rounded-md ml-[4.5%] w-[90%] h-[60%]"  alt="">
+      </div>
+      <div class="swiper-slide text-center font-[18px] bg-slate-800 flex justify-center items-center" >
+        <img src="./images/usa3.jpg" class="block rounded-md w-[90%] ml-[4.5%] h-[60%]"  alt="">
+      </div>
+      <div class="swiper-slide text-center font-[18px] bg-slate-800 flex justify-center items-center">
+        <img src="./images/KD.jpg" class="block rounded-md w-[90%] ml-[4.5%] h-[60%]" alt="">
+      </div>
+      <div class="swiper-slide text-center font-[18px] bg-slate-800 flex justify-center items-center">
+        <img src="./images/king.jpg" class="block rounded-md ml-[10%] w-[80%] object-cover lg:w-[75%]" alt="">
+      </div>
+    </div>
+    <div class="swiper-scrollbar"></div>
+  </div>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+      <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+    });
+  </script>
+</body>
+</html>
